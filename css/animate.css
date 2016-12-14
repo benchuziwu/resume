@@ -104,7 +104,8 @@
     -webkit-transform: scale3d(1.5, 1.5, 1.5) translate3d(0, -2px, 0);
     transform: scale3d(1.5, 1.5, 1.5) translate3d(0, -2px, 0); } }
 .pulse {
-  animation: pulse 5s ease infinite; }
+  -webkit-animation: pulse 5s ease infinite;
+          animation: pulse 5s ease infinite; }
 
 @-webkit-keyframes rubberBand {
   from {
@@ -260,7 +261,8 @@
     transform: rotate3d(0, 0, 1, 0deg); } }
 .swing {
   -webkit-transform-origin: top center;
-  transform-origin: top center;
+  -ms-transform-origin: top center;
+      transform-origin: top center;
   -webkit-animation-name: swing;
   animation-name: swing; }
 
@@ -403,7 +405,8 @@
   -webkit-animation-name: jello;
   animation-name: jello;
   -webkit-transform-origin: center;
-  transform-origin: center; }
+  -ms-transform-origin: center;
+      transform-origin: center; }
 
 @-webkit-keyframes bounceIn {
   from, 20%, 40%, 60%, 80%, to {
@@ -1181,7 +1184,8 @@
     -webkit-animation-timing-function: ease-in;
     animation-timing-function: ease-in; } }
 .animated.flip {
-  animation: flip 5s ease infinite; }
+  -webkit-animation: flip 5s ease infinite;
+          animation: flip 5s ease infinite; }
 
 @-webkit-keyframes flipInX {
   from {
@@ -2230,5 +2234,3 @@
 .slideOutUp {
   -webkit-animation-name: slideOutUp;
   animation-name: slideOutUp; }
-
-/*# sourceMappingURL=animate.css.map */
